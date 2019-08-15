@@ -33,6 +33,9 @@
 - 响应状态码
 - requests.get(url,headers = headers,timeout=0.01)
 - 设置超时，服务器在timeout秒无应答就停止响应。
+- cookies = dict(cookies_are='working')
+- r = requests.get(url, cookies=cookies)
+- 发送cookies
 ## 错误与异常
 - ConnectionError为网络问题
 - 如果 HTTP 请求返回了不成功的状态码， Response.raise_for_status() 会抛出一个 HTTPError 异常。
